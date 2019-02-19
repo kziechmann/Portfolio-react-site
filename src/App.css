@@ -2,12 +2,7 @@ body {
   background-image: url("./BG_Layer_1.png");
   background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
-
  }
-
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
-}
 
 .navlink{
   font-weight: 700;
@@ -23,6 +18,9 @@ body {
   color: white;
 }
 
+.sticky-nav {
+  top: 0;
+}
 
 h3{
   font-family: 'Roboto Condensed', sans-serif;
@@ -30,8 +28,16 @@ h3{
   color: tan;
 }
 
+h1{
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: rgba(0, 0, 0, 0.555);
+}
+
 .parallax{
-  transform: width(100%);
+  width:100%;
 }
 
 .transparent{
@@ -39,13 +45,30 @@ h3{
   filter: alpha(opacity=80);
 }
 
+p{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.tile{
+  background-color: rgba(0, 0, 0, 0.562);
+  border-radius: 20;
+  padding: 1rem;
+}
+
 .App-link {
   color: #61dafb;
 }
 
+.bg_layer{
+  width:100%;
+}
+
 @media only screen and (min-width: 800px) {
   body{
-    background-size: 100% 400%;
+    background-size: 100%;
   }
 }
 
@@ -53,15 +76,42 @@ h3{
   body{
     background-size: 800px 475%;
   }
-  .bg_layer{
-    width:800px;
-    height:100%;
-  }
+ 
 }
 
-.parallax__group {
+.parallax_group {
   position: relative;
   height: 100vh;
   transform-style: preserve-3d;
 }
 
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax_layer_foreground {
+  transform: translateZ(.5px) scale(.5);
+}
+
+.parallax_layer_midground {
+  transform: translateZ(-.5px) scale(1.5);
+ 
+}
+
+.parallax_layer_background {
+  transform: translateZ(-1px) scale(2);
+  
+}
+
+.parallax_layer_way_back {
+  transform: translateZ(-2px) scale(3);
+}
