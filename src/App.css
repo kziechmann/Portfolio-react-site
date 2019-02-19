@@ -1,7 +1,7 @@
 body {
   background-image: url("./BG_Layer_1.png");
   background-repeat: no-repeat;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
  }
 
@@ -11,7 +11,7 @@ body {
 
 .navlink{
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   color: tan;
   
