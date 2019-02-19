@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Background from './Parallax_BG.js';
-import RBNavbar from './Navbar.js';
+import Background from './components/Parallax_BG';
+import RBNavbar from './components/Navbar';
 
 class App extends Component {
   render() {
