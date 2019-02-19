@@ -4,25 +4,27 @@ import ParaBackground from './components/Parallax_BG';
 import About from './pages/About';
 import Websites from './pages/Websites';
 import RBNavbar from './components/Navbar';
-import { Parallax , Background } from 'react-parallax';
+import { Router, Route, Switch } from 'react-router'
 
 class App extends Component {
   state={
-    page:"home"
+    page:""
   }
 
   navigate(page){
-    this.state.page=page
+    this.setState({page:page})
   }
 
   render() {
     return (
+      
         <div className="App">
           <nav className="sticky-nav">
             <RBNavbar navigate={this.navigate}></RBNavbar>
           </nav>
           <div className="parallax">
             <div className="row justify-content-center">
+              <h1> {this.state.page} </h1>
             </div>
             <div className="parallax_group">
               <Websites/>
@@ -32,6 +34,7 @@ class App extends Component {
             
           </div>
         </div>
+
     );
   }
 }

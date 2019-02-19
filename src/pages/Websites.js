@@ -4,9 +4,9 @@ import '../App.css';
 class Websites extends Component {
     render() {
       return (
-            <div className="container mt-5 parallax_layer_midground ">
-                <div className="row display-inline-block justify-content-center tile mb-3 mt-5">
-                    <div className="col-6 mt-5">
+            <div className="container parallax_layer_foreground ">
+                <div className="row display-inline-block justify-content-center tile mb-3">
+                    <div className="col-6">
                         <p>Bus to Show is a non-profit organization dedicated to providing a safe means of transportation to and from large events in Colorado. Our team designed a new full stack reservation application for ticket booking, and concert information with ease of use foremost in mind.</p>
                     </div>
                     <div className="col-6">
