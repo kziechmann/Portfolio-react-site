@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ParaBackground from './components/Parallax_BG';
 import About from './pages/About';
+import Websites from './pages/Websites';
 import RBNavbar from './components/Navbar';
 import { Parallax , Background } from 'react-parallax';
 
@@ -17,8 +18,9 @@ class App extends Component {
               <h1> About </h1>
             </div>
             <div className="parallax_group">
-              <About/>
+              <Websites/>
               <ParaBackground/>
+              <About/>
             </div>
             
           </div>

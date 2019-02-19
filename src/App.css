@@ -115,3 +115,11 @@ p{
 .parallax_layer_way_back {
   transform: translateZ(-2px) scale(3);
 }
+
+.content_img{
+  width:100%;
+}
+
+.portrait{
+  width:100%;
+}
