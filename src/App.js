@@ -7,15 +7,22 @@ import RBNavbar from './components/Navbar';
 import { Parallax , Background } from 'react-parallax';
 
 class App extends Component {
+  state={
+    page:"home"
+  }
+
+  navigate(page){
+    this.state.page=page
+  }
+
   render() {
     return (
         <div className="App">
           <nav className="sticky-nav">
-            <RBNavbar></RBNavbar>
+            <RBNavbar navigate={this.navigate}></RBNavbar>
           </nav>
           <div className="parallax">
             <div className="row justify-content-center">
-              <h1> About </h1>
             </div>
             <div className="parallax_group">
               <Websites/>

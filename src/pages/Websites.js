@@ -4,29 +4,31 @@ import '../App.css';
 class Websites extends Component {
     render() {
       return (
-            <div className="container mt-5 parallax_layer_midground tile">
-                <div className="row display-inline-block justify-content-center ">
-                    <div className="col-8">
-                        <p>Software Developer and digital media specialist with six years of experience in web-focused media production for commercial and editorial clients. Expertise includes full-stack application development, mobile (android) development, cinematography and video-editing . Past projects encompass online-educational series, documentary content and commercials for the web and broadcast. Currently exploring the unique opportunities at the intersection of programming and interactive media</p>
+            <div className="container mt-5 parallax_layer_midground ">
+                <div className="row display-inline-block justify-content-center tile mb-3 mt-5">
+                    <div className="col-6 mt-5">
+                        <p>Bus to Show is a non-profit organization dedicated to providing a safe means of transportation to and from large events in Colorado. Our team designed a new full stack reservation application for ticket booking, and concert information with ease of use foremost in mind.</p>
                     </div>
-                    <div className="col-3">
-                        <img className="content_img" src="./images/BusToShow.png" alt="BusToShow.org" />
-                    </div>
-                </div>
-                <div className="row display-inline-block justify-content-center ">
-                    <div className="col-3">
-                        <img className="content_img" src="./images/Influx.png" alt="Influx App" />
-                    </div>
-                    <div className="col-8">
-                        <p>Software Developer and digital media specialist with six years of experience in web-focused media production for commercial and editorial clients. Expertise includes full-stack application development, mobile (android) development, cinematography and video-editing . Past projects encompass online-educational series, documentary content and commercials for the web and broadcast. Currently exploring the unique opportunities at the intersection of programming and interactive media</p>
+                    <div className="col-6">
+                        <a href="https://bus-to-show-q3.surge.sh/"><img  className="content_img" src="./images/BusToShow.png" alt="BusToShow.org" /></a>
                     </div>
                 </div>
-                <div className="row display-inline-block justify-content-center ">
-                    <div className="col-8">
-                        <p>Software Developer and digital media specialist with six years of experience in web-focused media production for commercial and editorial clients. Expertise includes full-stack application development, mobile (android) development, cinematography and video-editing . Past projects encompass online-educational series, documentary content and commercials for the web and broadcast. Currently exploring the unique opportunities at the intersection of programming and interactive media</p>
+                <div className="row display-inline-block justify-content-center tile mb-3">
+                    <div className="col-6">
+                        <a href="https://influx-news.herokuapp.com/"><img  className="content_img" src="./images/Influx.png" alt="Influx App" /></a>
                     </div>
-                    <div className="col-3">
-                        <img className="content_img" src="./images/PickMovie.jpg" alt="PickMovie App" />
+                    <div className="col-6 mt-5">
+                        <p>Influx allows the user to create a customized newsfeed aggregated from a variety of trustworthy sources. Users are able to set keyword tags that directly inform their feed as well as filter their feed by news source or language.</p>
+                    </div>
+                </div>
+                <div className="row display-inline-block justify-content-center tile mb-3">
+                    <div className="col-6 mt-4">
+                        <p>PickMovie generates a random suggestion for a top-rated movie to watch based on selected genres.
+Embedded in the page is an I-frame youtube player for the trailer, the poster image, and various information
+about the movie,</p>
+                    </div>
+                    <div className="col-6">
+                        <a href="https://pickmovie.surge.sh/Index.html" ><img className="content_img" src="./images/PickMovie.jpg" alt="PickMovie App" /></a>
                     </div>
                 </div>
             </div>

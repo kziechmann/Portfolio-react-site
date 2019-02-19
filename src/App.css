@@ -50,6 +50,8 @@ p{
   font-weight: bold;
   color: white;
   letter-spacing: 2px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .tile{
@@ -117,7 +119,8 @@ p{
 }
 
 .content_img{
-  width:100%;
+  margin-top: 3rem;
+  width: 100%;
 }
 
 .portrait{
