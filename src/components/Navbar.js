@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav} from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { LinkContainer } from 'react-router-bootstrap';
 import '../App.css';
 
 class RBNavbar extends Component {
@@ -10,12 +12,30 @@ class RBNavbar extends Component {
                 <h3>Kevin Ziechmann</h3>
             </Navbar.Brand>
             <Nav className="mr-auto">
-               <Nav.Item> <Nav.Link path="/websites" className="mr-2 ml-2 navlink" href="#development" onClick={(e)=>this.props.navigate("Websites")}>Websites</Nav.Link></Nav.Item>
-               <Nav.Item> <Nav.Link className="mr-2 ml-2 navlink" href="#videography"onClick={(e)=>this.props.navigate("Videography")}>Videography</Nav.Link></Nav.Item>
-               <Nav.Item> <Nav.Link className="mr-2 ml-2 navlink" href="#photography"onClick={(e)=>this.props.navigate("Photography")}>Photography</Nav.Link></Nav.Item>
-               <Nav.Item> <Nav.Link className="mr-2 ml-2 navlink" href="#blog"onClick={(e)=>this.props.navigate("Blog")}>Blog</Nav.Link></Nav.Item>
-               <Nav.Item> <Nav.Link className="mr-2 ml-2 navlink" href="#contact"onClick={(e)=>this.props.navigate("Contact")}>Contact</Nav.Link></Nav.Item>
-               <Nav.Item> <Nav.Link className="mr-2 ml-2 navlink" href="#about"onClick={(e)=>this.props.navigate("About")}>About</Nav.Link></Nav.Item>
+              <LinkContainer to="/websites">
+                <Nav.Item className="mr-2 ml-2 navlink" >Websites</Nav.Item>
+              </LinkContainer>
+              <LinkContainer to="/videography">
+                <Nav.Item className="mr-2 ml-2 navlink" >Videography</Nav.Item>
+              </LinkContainer>
+              <LinkContainer to="/photography">
+                <Nav.Item className="mr-2 ml-2 navlink" >Photography</Nav.Item>
+              </LinkContainer>
+              <LinkContainer to="/contact">
+                <Nav.Item className="mr-2 ml-2 navlink" >Contact</Nav.Item>
+              </LinkContainer>
+              <LinkContainer to="/about">
+                <Nav.Item className="mr-2 ml-2 navlink" >About</Nav.Item>
+              </LinkContainer>
+              <LinkContainer to="/about">
+                <Nav.Item className="mr-2 ml-2 navlink" ><FontAwesomeIcon icon="github-square"/></Nav.Item>
+              </LinkContainer> <LinkContainer to="/">
+                <Nav.Item className="mr-2 ml-2 navlink" ></Nav.Item>
+              </LinkContainer> <LinkContainer to="/">
+                <Nav.Item className="mr-2 ml-2 navlink" ></Nav.Item>
+              </LinkContainer> <LinkContainer to="/">
+                <Nav.Item className="mr-2 ml-2 navlink" ></Nav.Item>
+              </LinkContainer>
             </Nav>
       </Navbar>
       );

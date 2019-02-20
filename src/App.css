@@ -9,10 +9,19 @@ body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   color: tan;
-  
+}
+
+.navIcon{
+  color: tan;
 }
 
 .navlink:hover{
+  border-bottom: 1px solid white;
+  border-radius: 1px;
+  color: white;
+}
+
+.navIcon:hover{
   border-bottom: 1px solid white;
   border-radius: 1px;
   color: white;
@@ -46,7 +55,7 @@ h1{
 }
 
 p{
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
   color: white;
   letter-spacing: 2px;
@@ -58,6 +67,15 @@ p{
   background-color: rgba(0, 0, 0, 0.562);
   border-radius: 20;
   padding: 1rem;
+}
+
+.about{
+  padding-bottom: 10rem;
+}
+
+.portfolio{
+  margin-top: -8rem;
+  padding-bottom: 3rem;
 }
 
 .App-link {
@@ -72,13 +90,19 @@ p{
   body{
     background-size: 100%;
   }
+  p{
+    font-size: 1.5em;
+  }
+  
 }
 
 @media only screen and (max-width: 800px) {
   body{
     background-size: 800px 475%;
   }
- 
+  p{
+    font-size: 1em;
+  }
 }
 
 .parallax_group {

@@ -5,6 +5,9 @@ class Websites extends Component {
     render() {
       return (
             <div className="container parallax_layer_foreground ">
+                <div className="row justify-content-center portfolio">
+                    <h1>Web Portfolio</h1> 
+                </div>
                 <div className="row display-inline-block justify-content-center tile mb-3">
                     <div className="col-6">
                         <p>Bus to Show is a non-profit organization dedicated to providing a safe means of transportation to and from large events in Colorado. Our team designed a new full stack reservation application for ticket booking, and concert information with ease of use foremost in mind.</p>
@@ -24,8 +27,9 @@ class Websites extends Component {
                 <div className="row display-inline-block justify-content-center tile mb-3">
                     <div className="col-6 mt-4">
                         <p>PickMovie generates a random suggestion for a top-rated movie to watch based on selected genres.
-Embedded in the page is an I-frame youtube player for the trailer, the poster image, and various information
-about the movie,</p>
+                            Embedded in the page is an I-frame youtube player for the trailer, the poster image, and various information
+                            about the movie.
+                        </p>
                     </div>
                     <div className="col-6">
                         <a href="https://pickmovie.surge.sh/Index.html" ><img className="content_img" src="./images/PickMovie.jpg" alt="PickMovie App" /></a>

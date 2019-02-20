@@ -4,7 +4,12 @@ import ParaBackground from './components/Parallax_BG';
 import About from './pages/About';
 import Websites from './pages/Websites';
 import RBNavbar from './components/Navbar';
-import { Router, Route, Switch } from 'react-router'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faIgloo)
 
 class App extends Component {
   state={
@@ -17,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      
+      <Router>
         <div className="App">
           <nav className="sticky-nav">
             <RBNavbar navigate={this.navigate}></RBNavbar>
@@ -27,14 +32,14 @@ class App extends Component {
               <h1> {this.state.page} </h1>
             </div>
             <div className="parallax_group">
-              <Websites/>
+              <Route path="/websites" component={Websites}/>
+              <Route path="/about" component={About}/>
               <ParaBackground/>
-              <About/>
             </div>
             
           </div>
         </div>
-
+      </Router>
     );
   }
 }
