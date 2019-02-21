@@ -21,8 +21,9 @@ class Photography extends Component {
     render() {
       return (
             <div className="container parallax_layer_foreground photography">
+                <div className="mt-2"></div>
                 <div className="row justify-content-center mb-3">
-                    <h1>Photography</h1> 
+                        <h1> <img className="mb-2 mr-3" src="./images/fontawesome-free-5.7.2-web/svgs/solid/camera.svg" width="50" alt="camera icon"></img>  Photography </h1> 
                 </div>
                 <div className="row justify-content-center tile">
                 {this.state.images? Object.keys(this.state.images).map(image=><img height="250px" className="mx-1 mt-1" src={this.state.images[image]}/>):""}

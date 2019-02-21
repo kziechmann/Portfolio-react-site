@@ -43,9 +43,9 @@ h1{
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   letter-spacing: 3px;
-  color: rgba(0, 0, 0, 0.555);
+  color: tan;
   animation: .5s ease-out 0s 1 slideInFromBack;
-  text-shadow: -2px 2px 2px tan;
+  text-shadow: -4px 4px rgba(0, 0, 0, 0.555);
 }
 
 .parallax{
@@ -104,10 +104,7 @@ p{
   p{
     font-size: 1.5em;
   }
-  .vidTitle{
-    margin-top: -10em;
-    margin-bottom: 10em;
-  }
+  
 }
 
 @media only screen and (max-width: 800px) {
@@ -187,8 +184,7 @@ p{
 }
 
 .vidTitle{
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-bottom: 8em;
 }
 
 @media only screen and (min-width: 1500px) {

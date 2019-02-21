@@ -19,9 +19,9 @@ class Videography extends Component {
             };
       return (
             <React.Fragment>
-            <div className="container parallax_layer_foreground ">
+            <div className="container parallax_layer_foreground mt-5">
                 <div className="row justify-content-center vidTitle">
-                    <h1>Videography</h1> 
+                    <h1><img className="mb-2 mr-3" src="./images/fontawesome-free-5.7.2-web/svgs/solid/video.svg" width="50" alt="video icon"></img>  Videography</h1> 
                 </div>
                 <div className="row mb-5">
                 </div>

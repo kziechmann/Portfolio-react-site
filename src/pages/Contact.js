@@ -23,7 +23,7 @@ class Contact extends Component {
       return (
             <div className="container parallax_layer_foreground ">
                 <div className="row justify-content-center mb-5">
-                    <h1>Contact Kevin</h1> 
+                    <h1><img className="mb-2 mr-3" src="./images/fontawesome-free-5.7.2-web/svgs/regular/comment-dots.svg" width="50" alt="message icon"></img>  Contact Kevin</h1> 
                 </div>
                 <div className="row justify-content-center  mb-5 tile">
                 <div className="col-6 ">

@@ -6,8 +6,8 @@ class About extends Component {
     render() {
       return (
             <div className="container parallax_layer_foreground ">
-                <div className="row justify-content-center mb-5">
-                    <h1>Who made this?</h1> 
+                <div className="row justify-content-center mb-5 ">
+                    <h1><img className="mb-2 mr-3" src="./images/fontawesome-free-5.7.2-web/svgs/solid/id-card.svg" width="50" alt="info card"></img> Who made this?</h1> 
                 </div>
                 <div className="row justify-content-center tile">
                     <div className="col-8">
