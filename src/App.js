@@ -3,6 +3,7 @@ import './App.css';
 import ParaBackground from './components/Parallax_BG';
 import About from './pages/About';
 import Websites from './pages/Websites';
+import Photography from './pages/Photography';
 import RBNavbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -34,6 +35,7 @@ class App extends Component {
             <div className="parallax_group">
               <Route path="/websites" component={Websites}/>
               <Route path="/about" component={About}/>
+              <Route path="/photography" component={Photography}/>
               <ParaBackground/>
             </div>
             

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
 import '../App.css';
 
 class About extends Component {
+
     render() {
       return (
             <div className="container parallax_layer_foreground ">
@@ -14,7 +14,7 @@ class About extends Component {
                         <p>Kevin is a web developer and digital media specialist with six years of experience in online media production for commercial and editorial clients. Expertise includes full-stack application development, mobile (android) development, cinematography and video-editing . Past projects encompass online-educational series, documentary content and commercials for the web and broadcast. Currently exploring the unique opportunities at the intersection of programming and interactive media</p>
                     </div>
                     <div className="col-3">
-                        <img className="portrait" src="./images/cropped.jpg" alt="portrait" />
+                        <img className="portrait mt-5" src="./images/cropped.jpg" alt="portrait" />
                     </div>
                 </div>
                 <div className="about"></div>

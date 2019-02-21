@@ -28,13 +28,13 @@ class RBNavbar extends Component {
                 <Nav.Item className="mr-2 ml-2 navlink" >About</Nav.Item>
               </LinkContainer>
               <LinkContainer to="/about">
-                <Nav.Item className="mr-2 ml-2 navlink" ><FontAwesomeIcon icon="github-square"/></Nav.Item>
+                <Nav.Item className="navIcon"><img className="mr-1 ml-1 " src="./images/fontawesome-free-5.7.2-web/svgs/brands/github-square.svg" width="20"></img></Nav.Item>
               </LinkContainer> <LinkContainer to="/">
-                <Nav.Item className="mr-2 ml-2 navlink" ></Nav.Item>
+                <Nav.Item className="navIcon"><img className="mr-1 ml-1 " src="./images/fontawesome-free-5.7.2-web/svgs/brands/linkedin.svg" width="20"></img></Nav.Item>
               </LinkContainer> <LinkContainer to="/">
-                <Nav.Item className="mr-2 ml-2 navlink" ></Nav.Item>
+                <Nav.Item className="navIcon"><img className="mr-1 ml-1 " src="./images/fontawesome-free-5.7.2-web/svgs/brands/instagram.svg" width="20"></img></Nav.Item>
               </LinkContainer> <LinkContainer to="/">
-                <Nav.Item className="mr-2 ml-2 navlink" ></Nav.Item>
+                <Nav.Item className="navIcon"><img className="mr-1 ml-1 " src="./images/fontawesome-free-5.7.2-web/svgs/brands/twitter.svg" width="20"></img></Nav.Item>
               </LinkContainer>
             </Nav>
       </Navbar>

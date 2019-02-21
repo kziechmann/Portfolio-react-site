@@ -12,18 +12,19 @@ body {
 }
 
 .navIcon{
-  color: tan;
+  background-color: tan;
+  border-radius: 5px;
+  margin-left: 20px;
 }
 
 .navlink:hover{
-  border-bottom: 1px solid white;
-  border-radius: 1px;
+  border-bottom: 1.5px solid white;
+  border-radius: 5px;
   color: white;
 }
 
 .navIcon:hover{
-  border-bottom: 1px solid white;
-  border-radius: 1px;
+  background-color: white;
   color: white;
 }
 
@@ -43,6 +44,8 @@ h1{
   font-weight: 900;
   letter-spacing: 3px;
   color: rgba(0, 0, 0, 0.555);
+  animation: .5s ease-out 0s 1 slideInFromBack;
+  text-shadow: -2px 2px 2px tan;
 }
 
 .parallax{
@@ -67,6 +70,7 @@ p{
   background-color: rgba(0, 0, 0, 0.562);
   border-radius: 20;
   padding: 1rem;
+  animation: 1s ease-out 0s 1 slideInFromBack;
 }
 
 .about{
@@ -151,15 +155,17 @@ p{
   width:100%;
 }
 
-.snow{
-  background-image:
-          url(https://i.imgur.com/uYjnk8N.png), 
-             url(https://i.imgur.com/iAGD6MA.png), 
-             url(https://i.imgur.com/hIJDjbg.png);
-  animation: snow 30s linear infinite;
-  }
-  
-  @keyframes snow {
-      0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-      100% {background-position: 500px 1000px, 400px 400px, 300px 300px}
+.photography{
+  margin-top: -20em;
+}
+
+  @keyframes slideInFromBack {
+    0% {
+      opacity: 0.5;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
