@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Navbar, Nav} from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { LinkContainer } from 'react-router-bootstrap';
 import '../App.css';
 
@@ -13,7 +12,7 @@ class RBNavbar extends Component {
             </Navbar.Brand>
             <Nav className="mr-auto">
               <LinkContainer to="/websites">
-                <Nav.Item className="mr-2 ml-2 navlink" >Websites</Nav.Item>
+                <Nav.Item className="mr-2 ml-2 navlink" >Web Portfolio</Nav.Item>
               </LinkContainer>
               <LinkContainer to="/videography">
                 <Nav.Item className="mr-2 ml-2 navlink" >Videography</Nav.Item>

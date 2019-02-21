@@ -4,13 +4,10 @@ import ParaBackground from './components/Parallax_BG';
 import About from './pages/About';
 import Websites from './pages/Websites';
 import Photography from './pages/Photography';
+import Videography from './pages/Videography';
+import Contact from './pages/Contact';
 import RBNavbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faIgloo)
 
 class App extends Component {
   state={
@@ -36,6 +33,8 @@ class App extends Component {
               <Route path="/websites" component={Websites}/>
               <Route path="/about" component={About}/>
               <Route path="/photography" component={Photography}/>
+              <Route path="/videography" component={Videography}/>
+              <Route path="/contact" component={Contact}/>
               <ParaBackground/>
             </div>
             

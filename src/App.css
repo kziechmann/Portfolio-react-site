@@ -93,6 +93,10 @@ p{
   width:100%;
 }
 
+.photography{
+  margin-top: -20em;
+}
+
 @media only screen and (min-width: 800px) {
   body{
     background-size: 100%;
@@ -100,7 +104,10 @@ p{
   p{
     font-size: 1.5em;
   }
-  
+  .vidTitle{
+    margin-top: -10em;
+    margin-bottom: 10em;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -109,6 +116,10 @@ p{
   }
   p{
     font-size: 1em;
+  }
+  .vidTitle{
+    margin-top: 5em;
+    margin-bottom: 5em;
   }
 }
 
@@ -158,9 +169,41 @@ p{
   width:100%;
 }
 
-.photography{
-  margin-top: -20em;
+.videowrapper {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
 }
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vidTitle{
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+@media only screen and (min-width: 1500px) {
+  .videowrapper{
+    margin-top: -5em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .photography{
+    margin-top: -30em;
+      -webkit-transform-origin-y: 0;
+  }
+}
+
 
   @keyframes slideInFromBack {
     0% {
