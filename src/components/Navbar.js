@@ -27,15 +27,18 @@ class RBNavbar extends Component {
               <LinkContainer to="/about">
                 <Nav.Item className="mr-2 ml-2 navlink" >About</Nav.Item>
               </LinkContainer>
-              <LinkContainer to="/about">
+              <a href="https://github.com/kziechmann" target="_blank">
                 <Nav.Item className="navIcon"><img className="mr-1 ml-1 " src="./images/fontawesome-free-5.7.2-web/svgs/brands/github-square.svg" width="20"></img></Nav.Item>
-              </LinkContainer> <LinkContainer to="/">
+              </a> 
+              <a href="https://www.linkedin.com/in/kevinziechmann/" target="_blank">
                 <Nav.Item className="navIcon"><img className="mr-1 ml-1 " src="./images/fontawesome-free-5.7.2-web/svgs/brands/linkedin.svg" width="20"></img></Nav.Item>
-              </LinkContainer> <LinkContainer to="/">
+              </a> 
+              <a href="https://www.instagram.com/kziechmann/" target="_blank">
                 <Nav.Item className="navIcon"><img className="mr-1 ml-1 " src="./images/fontawesome-free-5.7.2-web/svgs/brands/instagram.svg" width="20"></img></Nav.Item>
-              </LinkContainer> <LinkContainer to="/">
+              </a> 
+              <a href="https://twitter.com/kevinziechmann" target="_blank">
                 <Nav.Item className="navIcon"><img className="mr-1 ml-1 " src="./images/fontawesome-free-5.7.2-web/svgs/brands/twitter.svg" width="20"></img></Nav.Item>
-              </LinkContainer>
+              </a>
             </Nav>
       </Navbar>
       );
