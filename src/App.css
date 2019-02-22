@@ -187,6 +187,10 @@ p{
   margin-bottom: 8em;
 }
 
+.modal{
+  margin-top: 10em;
+}
+
 @media only screen and (min-width: 1500px) {
   .videowrapper{
     margin-top: -5em;

@@ -7,7 +7,7 @@ import Photography from './pages/Photography';
 import Videography from './pages/Videography';
 import Contact from './pages/Contact';
 import RBNavbar from './components/Navbar';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 class App extends Component {
   state={

@@ -41,7 +41,7 @@ class Contact extends Component {
                     <Form.Control as="textarea" rows="3" onChange={e=>{this.updateField("body",e)}}/>
                 </Form.Group>
                 <div className=" row justify-content-center"> 
-                     <Button disabled={this.state.submittable? "" : "disabled"} variant="dark" href={`mailto:?subject=${this.state.subject}&body=${this.state.body}, From: ${this.state.name}`}><h3>Send</h3>
+                     <Button disabled={this.state.submittable? "" : "disabled"} variant="dark" href={`mailto:kziechmann@gmail.com?subject=${this.state.subject}&body=${this.state.body}, From: ${this.state.name}`}><h3>Send</h3>
                     </Button>
                 </div>
                
