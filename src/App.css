@@ -118,6 +118,7 @@ p{
     margin-top: 5em;
     margin-bottom: 5em;
   }
+
 }
 
 .parallax_group {
@@ -215,11 +216,20 @@ p{
   }
 
   .portfolio{
-    margin-top: -12em;
+    margin-top: -18em;
   }
   .videowrapper{
+    margin-top: -1em;
+  }
+
+  .vidTitle{
+    margin-top: 6em;
+  }
+
+  .about{
     margin-top: -2em;
   }
+
 } 
 
   @keyframes slideInFromBack {
