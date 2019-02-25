@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Modal, Button} from 'react-bootstrap'
+import {Modal} from 'react-bootstrap'
 import '../App.css';
 
 class Photography extends Component {
@@ -10,7 +10,7 @@ class Photography extends Component {
    componentDidMount(){
         function importAll(r) {
             let images = {};
-            r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+            r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
             return images;
           }
           

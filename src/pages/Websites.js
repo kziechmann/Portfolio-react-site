@@ -4,9 +4,9 @@ import '../App.css';
 class Websites extends Component {
     render() {
       return (
-            <div className="container parallax_layer_foreground mt-4">
-                <div className="row justify-content-center portfolio">
-                    <h1><img className="mb-2 mr-3" src="./images/fontawesome-free-5.7.2-web/svgs/solid/laptop-code.svg" width="50" alt="computer icon"></img>  Web Portfolio</h1> 
+            <div className="container parallax_layer_foreground mt-5">
+                <div className="row justify-content-center portfolio ">
+                    <h1><img className="mb-2 mr-3 " src="./images/fontawesome-free-5.7.2-web/svgs/solid/laptop-code.svg" width="50" alt="computer icon"></img>  Web Portfolio</h1> 
                 </div>
                 <div className="row display-inline-block justify-content-center tile mb-3">
                     <div className="col-6">

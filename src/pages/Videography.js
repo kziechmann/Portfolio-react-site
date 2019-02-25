@@ -23,10 +23,10 @@ class Videography extends Component {
                 <div className="row justify-content-center vidTitle">
                     <h1><img className="mb-2 mr-3" src="./images/fontawesome-free-5.7.2-web/svgs/solid/video.svg" width="50" alt="video icon"></img>  Videography</h1> 
                 </div>
-                <div className="row mb-5">
+                <div className="row mb-5 ">
                 </div>
                 <div className= "row justify-content-center ">
-                <div className="col-12 videowrapper">
+                <div className="col-12 videowrapper tile loading-spinner">
             <YouTube
                 videoId="lH3STqbFyR0"
                 opts={opts}

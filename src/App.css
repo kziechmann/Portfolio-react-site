@@ -166,6 +166,11 @@ p{
   width:100%;
 }
 
+.footer{
+  position: absolute;
+  top: 0;
+}
+
 .videowrapper {
   float: none;
   clear: both;
@@ -199,11 +204,23 @@ p{
 
 @media only screen and (max-width: 1200px) {
   .photography{
-    margin-top: -30em;
-      -webkit-transform-origin-y: 0;
+    margin-top: -50em;
   }
-}
+} 
 
+
+@media only screen and (max-width: 600px) {
+  .photography{
+    margin-top: -113em;
+  }
+
+  .portfolio{
+    margin-top: -12em;
+  }
+  .videowrapper{
+    margin-top: -2em;
+  }
+} 
 
   @keyframes slideInFromBack {
     0% {
@@ -215,3 +232,56 @@ p{
       transform: translateY(0);
     }
   }
+
+ .loading-spinner {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  opacity: 1;
+  position: relative;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(0deg);
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(360deg);
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(0deg);
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(360deg);
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+.loading-spinner.-paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  opacity: 0.2;
+  transition: opacity linear 0.1s;
+}
+.loading-spinner::before {
+  -webkit-animation: 1.5s linear infinite spinner;
+          animation: 1.5s linear infinite spinner;
+  -webkit-animation-play-state: inherit;
+          animation-play-state: inherit;
+  border: solid 3px #dedede;
+  border-bottom-color: #EF6565;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  left: 50%;
+  opacity: inherit;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  width: 40px;
+  will-change: transform;
+}
